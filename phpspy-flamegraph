@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+[[ -z $1 ]] && echo "please give traces" && exit 1
+if [[ -z $2 ]]; then
+    flame="phpspy-flamegraph.svg"
+else
+    flame="$2"
+fi
+
+/usr/lib/phpspy/stackcollapse-phpspy.pl < $1 \
+    | /usr/lib/phpspy/flamegraph.pl > "$flame"
