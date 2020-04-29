@@ -2,7 +2,7 @@
 
 _gitname=phpspy
 pkgname=phpspy-git
-pkgver=20200306.58575aa
+pkgver=20200428.e10d7c4
 pkgrel=1
 pkgdesc="low-overhead sampling profiler for PHP 7"
 arch=('x86_64')
